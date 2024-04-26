@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bad Omens</title>
+        <meta name="description" content="A single page website for the band Bad Omens.">
+        <meta name="author" content="Annette Short">
+        <link rel="stylesheet" href="sytles.css">
+        <script src="myscript.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="wrapper">
+                <h1>Bad Omens</h1>
+                <div class="logo">
+                    <img src="photos/logo.gif" alt="">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#merch">Merch</a></li>
+                        <li><a href="#PTW">PTW</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="banner"><!--Empty for banner--></div>
+
+        <div class="content">
+            <main>
+                <!-- section for about-->
+                <section id="about">
+                    <h2>About the Band</h2>
+                    <p>We are an American metalcore band from Richmond, Virginia, formed in 2015. 
+                    We're influenced musically in ways that don't coincide with norms. Band member include Jaokim "Jolly" Karlsson, Noah Sebastian, Nick Folio and Nicholas Ruffilo.
+                    </p>
+                </section>
+                <!--end of about-->
+                
+                <!--div for merch display-->
+                <section id="merchandise">
+                    <h2>Merch Table</h2>
+                    <img src="photos/Grim.png" alt="Photo of a man wearing a black tshirt with an orange and white grim reaper on the back.">
+                    <div class="product_description">
+                        <p>Grim Reaper Shirt</p>
+                    </div>
+                    <div></div>
+                </section>
+                <!--end of merch display-->
+
+                <!--Section for Play to Win-->
+                <section id="PTW">
+                    <h2>Play to Win!</h2>
+                    <p>Enter a random number below for a chance at tickets to a show near you! If the number you picked matches ours, you win!</p>
+                    <div class="form">
+                        <label for="guess">
+                            Enter your guess:  
+                        </label>
+
+                        <input type="text" id="guess" class="guess">
+                        <input type="submit" value="Submit" class="guessSubmit" id="guessSubmit">
+                    </div>
+                </section>
+
+                <!--Section for contact form-->
+                <section id="contact">
+                    <h2>Fill us In</h2>
+                    <p>By inputing your name and email, you agree to receive rad promotions from us.</p>
+                    <p>Any feedback about merch is appreciated as well.</p>
+
+                    <form>
+                        <label for="name">Full name: </label>
+                        <input type="text" name="name" required id="name">
+
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email">
+
+                        <label for="phone">Phone number: </label>
+                        <input type="tel" name="phone" id="phone">
+                            <!--to determine prefered contact-->
+                            <fieldset>
+                                <legend>Prefered Method of Contact</legend>
+                                <input type="radio" name="prefContact" id="prefEmail" value="Email">
+                                <label for="prefEmail">Email</label>
+            
+                                <input type="radio" name="prefPhone" id="prefPhone" value="Phone">
+                                <label for="prefPhone">Phone</label>
+                            </fieldset>
+
+                        <label for="message">Message: </label>
+                        <textarea id="message" name="message" required rows="4" cols="35"></textarea>
+
+                        <section>
+                            <h3 hidden>Submit</h3>
+                            <input type="submit" id="submit" value="Submit">
+                        </section>
+                    </form>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            Copyright &copy;2024 Bad Omens 
+        </footer>
+    </body>
+</html>

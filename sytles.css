@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***********End of reset*********/
+/*to fix the position at 1280px*/
+
+:root{
+   --red: #660c0c;
+   --sunset: #942f04;
+   --grey: #6e6663;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   /*add font family once you import*/
+}
+
+body {
+   text-align: center;
+   font-family: DM Mono, helvetica, sans-serif;
+}
+.wrapper {
+   width: auto;
+   margin: 0 auto;
+}
+/*hiding the bad omens h1 tag*/
+h1 {
+   visibility: hidden;
+}
+/*black header banner at top*/
+header {
+   height: 110px;
+   background-color: black;
+   opacity: 80%;
+   width: 100%;
+   z-index: 1;
+   position: fixed;
+}
+.logo { 
+   float: left;
+}
+/*floating the nav to the right and adjusting height*/
+nav li{
+   float: right;
+   line-height: 50px;
+   padding-right: 30px;
+}
+/*removing link lines and adding padding*/
+nav a{
+   text-decoration: none;
+   letter-spacing: 4px;
+   font-size: 30px;
+   padding: 36px 10px;
+   color: var(--grey);
+}
+/*changing the hover color*/
+/*Try to fix overflow of hover before submission*/
+nav a:hover {
+   background: var(--red);
+   color: white;
+}
+/*adding band photo and asjusting its size*/
+.banner{
+   width: 100%;
+   height: 500px;
+   position: fixed;
+   background-image: url(photos/background.jpg);
+   background-size: cover;
+   background-position: center center; 
+}
+/**/
+.content{
+   width: 100%;
+   height: auto;
+   position: relative;
+   top: 500px;
+   background-color: black;
+   color: white;
+   padding-bottom: 100px;
+}
+.content h2, h3{
+   font-size: 40px;
+   margin: 0;
+   padding-top: 30px;
+   letter-spacing: 4px;
+   color: white;
+} 
+
+/*styles for about section*/
+#about{
+background-color: var(--red);
+padding-bottom: 50px;
+font-size: 25px;
+}
+#about h2 {
+   font-size: 35px;
+   text-decoration: underline;
+   padding-bottom: 25px;
+}
+
+/*styles for play to win feature*/
+#PTW{
+   background-color: var(--red);
+   padding-bottom: 40px;
+}
+
+/*styles for contact form*/
+#contact{
+   width: 400px;
+   margin: auto; 
+}
+form {
+	width: 350px;
+	background-color: var(--red);
+	margin: auto;
+	border-radius: 16px;
+	padding: 10px;
+}
+#prefEmail, #prefPhone {
+	display: inline;
+	width: 20px;
+	height: 17px;
+}
+#label-block {
+	display: block;
+	margin-top: 10px;
+}
+textarea {
+	border-radius: 5px;
+}
+fieldset{
+	width: 275px;
+	border-radius: 5px;
+}
