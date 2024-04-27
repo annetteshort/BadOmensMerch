@@ -51,22 +51,36 @@ table {
 /***********End of reset*********/
 /*to fix the position at 1280px*/
 
-:root{
-   --red: #660c0c;
-   --sunset: #942f04;
-   --grey: #6e6663;
-}
-
 *{
    margin: 0;
    padding: 0;
    /*add font family once you import*/
 }
-
 body {
    text-align: center;
    font-family: DM Mono, helvetica, sans-serif;
+   background-color: black;
+   color: white;
 }
+/*LIGHT/DARK*/
+.darkToggle {
+   appearance: none;
+   width: 30px;
+   height: 30px;
+   background: white;
+   border-radius: 5px;
+   border: 2px solid #555;
+ }
+ 
+ .darkToggle:checked {
+   background: #333;
+ }
+ 
+ .dark {
+   color: white;
+   background: #444;
+ }
+
 .wrapper {
    width: auto;
    margin: 0 auto;
@@ -88,7 +102,7 @@ header {
    float: left;
 }
 /*floating the nav to the right and adjusting height*/
-nav li{
+nav li {
    float: right;
    line-height: 50px;
    padding-right: 30px;
@@ -99,12 +113,12 @@ nav a{
    letter-spacing: 4px;
    font-size: 30px;
    padding: 36px 10px;
-   color: var(--grey);
+   color: #6e6663;
 }
 /*changing the hover color*/
 /*Try to fix overflow of hover before submission*/
 nav a:hover {
-   background: var(--red);
+   background: #660c0c;
    color: white;
 }
 /*adding band photo and asjusting its size*/
@@ -121,9 +135,9 @@ nav a:hover {
    width: 100%;
    height: auto;
    position: relative;
-   top: 500px;
    background-color: black;
    color: white;
+   top: 500px;
    padding-bottom: 100px;
 }
 .content h2, h3{
@@ -136,7 +150,7 @@ nav a:hover {
 
 /*styles for about section*/
 #about{
-background-color: var(--red);
+background-color: #660c0c;
 padding-bottom: 50px;
 font-size: 25px;
 }
@@ -148,7 +162,7 @@ font-size: 25px;
 
 /*styles for play to win feature*/
 #PTW{
-   background-color: var(--red);
+   background-color: #660c0c;
    padding-bottom: 40px;
 }
 
@@ -159,7 +173,7 @@ font-size: 25px;
 }
 form {
 	width: 350px;
-	background-color: var(--red);
+	background-color: #660c0c;
 	margin: auto;
 	border-radius: 16px;
 	padding: 10px;

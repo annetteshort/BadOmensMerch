@@ -1,0 +1,17 @@
+.lightToggle {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+
+.lightTogle:checked {
+    background: white;
+}
+
+.light {
+    color: black;
+    background: white;
+}
